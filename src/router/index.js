@@ -16,7 +16,7 @@ const routes =  [
 
         ],
         meta: {
-            requireAuth: true
+            // requireAuth: true
         }
     },
     {

@@ -222,10 +222,10 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> All</a></li>
-                            <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Pending</a></li>
-                            <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Approved</a></li>
-                            <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Exipred</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> All</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Pending</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Approved</a></li>
+                            <li><a href="#"><i class="fa fa-circle-o"></i> Exipred</a></li>
                         </ul>
                     </li>
                     <li class="header">Settings</li>
@@ -263,11 +263,18 @@ export default {
     data() {
         return {
             avatar: "./static/img/avatar.jpg",
-            auth: {}
+            auth: {
+                data: {
+                    name: "Muflih Kholidin",
+                    avatar_url: "/static/img/avatar.jpg",
+                    file_id: 1,
+                    created_at: "2019-01-24 08:00:00"
+                }
+            }
         }
     },
     created: function() {
-        this.getCookie()
+        // this.getCookie()
     },
     methods: {
         logout() {
