@@ -12,9 +12,9 @@ export default {
 
 <style>
 body {
-    height: 100%;
-    #app {
-      height: 100%;
-    }
+  height: 100%;
+}
+#app {
+  height: 100%;
 }
 </style>

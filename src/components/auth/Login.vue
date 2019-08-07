@@ -37,13 +37,9 @@ export default {
         }
     },
     methods: {
+        /** write auth logic here and redirect to home */
         login() {
-            HTTP.post("/api/v1/user/login", this.data).then(response => {
-                this.$cookie.set('rrauth', JSON.stringify(response.data.data))
-                location.href = "/"
-            }).catch(error => {
-                this.$toasted.error(error.response.data.user_message).goAway(3000)
-            });
+            location.href = "/"
         }
     }
 }

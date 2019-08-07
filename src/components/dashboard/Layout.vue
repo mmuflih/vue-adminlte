@@ -263,18 +263,25 @@ export default {
     data() {
         return {
             avatar: "./static/img/avatar.jpg",
-            auth: {}
+            auth: {
+                data: {
+                    name: "Dummy",
+                    file_id: 0,
+                    created_at: new Date(),
+                    avatar_url: "",
+                }
+            }
         }
     },
     created: function() {
-        this.getCookie()
+        // this.getCookie()
     },
     methods: {
         logout() {
             var co = confirm("Yakin akan logout ?")
             if (co) {
                 clearToken()
-                location.href = "/"
+                location.href = "#/login"
             }
         },
         getCookie() {

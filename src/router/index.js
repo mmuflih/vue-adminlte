@@ -15,9 +15,9 @@ const routes =  [
         children: [
 
         ],
-        meta: {
-            requireAuth: true
-        }
+        // meta: {
+        //     requireAuth: true
+        // }
     },
     {
         path: '/login',
